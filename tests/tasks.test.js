@@ -43,5 +43,5 @@ test("removeTask supprime uniquement la tâche demandée", function () {
 test("addTask supprime les espaces inutiles autour du titre", function () {
   const tasks = defaultTasks();
   addTask(tasks, "   Réviser la CI   ");
-  assert.strictEqual(tasks.title, "Réviser la CI");
+  assert.strictEqual(tasks[4].title, "Réviser la CI");
 });
